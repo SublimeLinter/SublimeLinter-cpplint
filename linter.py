@@ -26,7 +26,7 @@ class Cpplint(Linter):
         '--filter=,': '',
     }
     comment_re = r'\s*/[/*]'
-    inline_settings = 'filter'
+    inline_settings = None
     inline_overrides = 'filter'
 
     def split_match(self, match):

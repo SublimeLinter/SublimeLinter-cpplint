@@ -34,7 +34,7 @@ In addition to the standard SublimeLinter settings, SublimeLinter-cpplint provid
 
 |Setting|Description|Inline Setting|Inline Override|
 |:------|:----------|:------------:|:-------------:|
-|filter|A comma-separated list of category-filters to apply|&#10003;|&#10003;|
+|filter|A comma-separated list of category-filters to apply| |&#10003;|
 
 ### Examples
 
