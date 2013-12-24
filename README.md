@@ -32,9 +32,27 @@ For general information on how SublimeLinter works with settings, please see [Se
 
 In addition to the standard SublimeLinter settings, SublimeLinter-cpplint provides its own settings. Those marked as “Inline Setting” or “Inline Override” may also be [used inline](https://github.com/SublimeLinter/SublimeLinter.github.io/wiki/Settings#inline-settings).
 
-|Setting|Description|Inline Setting|Inline Override|Example|
-|:------|:----------|:------------:|:-------------:|:-------------:|
-|filter|Specify a comma-separated list of category-filters to apply| | |`-whitespace,+whitespace/braces`|
+|Setting|Description|Inline Setting|Inline Override|
+|:------|:----------|:------------:|:-------------:|
+|filter|A comma-separated list of category-filters to apply|&#10003;|&#10003;|
+
+### Examples
+
+``filter`` can be a single string (anywhere) or array of strings (anywhere but inline).
+
+Inline setting:
+```c++
+// [SublimeLinter cpplint-filter: -whitespace,-runtime]
+```
+
+In a settings file:
+```json
+	"cpplint": {
+		// ...
+		"filter": "-whitespace,+whitespace/braces"
+		// ...
+	}
+```
 
 ## Contributing
 If you would like to contribute enhancements or fixes, please do the following:

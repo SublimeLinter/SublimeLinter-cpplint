@@ -25,6 +25,9 @@ class Cpplint(Linter):
     defaults = {
         '--filter=,': '',
     }
+    comment_re = r'\s*/[/*]'
+    inline_settings = 'filter'
+    inline_overrides = 'filter'
 
     def split_match(self, match):
         """
@@ -33,13 +36,13 @@ class Cpplint(Linter):
         We override this method so that the error:
             No copyright message found.
             You should have a line: "Copyright [year] <Copyright Owner>"  [legal/copyright] [5]
-        that appears on line -1 can be displayed.
+        that appears on line 0 (converted to -1 because of line_col_base), can be displayed.
 
         """
 
         match, line, col, error, warning, message, near = super().split_match(match)
 
-        if line is not None and int(line) is -1 and message:
+        if line is not None and line == -1 and message:
             line = 0
 
         return match, line, col, error, warning, message, near
