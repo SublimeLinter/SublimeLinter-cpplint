@@ -1,7 +1,7 @@
 SublimeLinter-cpplint
 =========================
 
-[![Build Status](https://khancdn.eu/badges.php?service=https%3A%2F%2Ftravis-ci.org%2FSublimeLinter%2FSublimeLinter-cpplint.png%3Fbranch%3Dmaster)](https://travis-ci.org/SublimeLinter/SublimeLinter-cpplint)
+[![Build Status](https://travis-ci.org/SublimeLinter/SublimeLinter-cpplint.svg?branch=master)](https://travis-ci.org/SublimeLinter/SublimeLinter-cpplint)
 
 This linter plugin for [SublimeLinter][docs] provides an interface to [cpplint](https://pypi.python.org/pypi/cpplint). It will be used with files that have the “C++” syntax.
 
