@@ -20,7 +20,7 @@ class Cpplint(Linter):
     syntax = 'c++'
     cmd = ('cpplint', '*', '@')
     regex = r'^.+:(?P<line>\d+):\s+(?P<message>.+)'
-    tempfile_suffix = '.cpp'
+    tempfile_suffix = '-'
     error_stream = util.STREAM_BOTH  # errors are on stderr
     defaults = {
         '--filter=,': '',
