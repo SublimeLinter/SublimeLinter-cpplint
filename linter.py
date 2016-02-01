@@ -14,7 +14,6 @@ from SublimeLinter.lint import Linter, util
 
 
 class Cpplint(Linter):
-
     """Provides an interface to cpplint."""
 
     syntax = 'c++'
