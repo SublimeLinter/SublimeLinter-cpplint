@@ -24,10 +24,11 @@ class Cpplint(Linter):
     error_stream = util.STREAM_BOTH  # errors are on stderr
     defaults = {
         '--filter=,': '',
+        '--linelength=,': '',
     }
     comment_re = r'\s*/[/*]'
     inline_settings = None
-    inline_overrides = 'filter'
+    inline_overrides = ['filter', 'linelength']
 
     def split_match(self, match):
         """
