@@ -42,6 +42,7 @@ In addition to the standard SublimeLinter settings, SublimeLinter-cpplint provid
 |Setting|Description|Inline Override|
 |:------|:----------|:-------------:|
 |filter|A comma-separated list of category-filters to apply|&#10003;|
+|linelength|The allowed line length (with cpplint >= 0.0.6)|&#10003;|
 
 ``filter`` can be a single string (anywhere) or array of strings (anywhere but inline).
 
