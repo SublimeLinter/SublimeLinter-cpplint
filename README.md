@@ -3,10 +3,10 @@ SublimeLinter-cpplint
 
 [![Build Status](https://travis-ci.org/SublimeLinter/SublimeLinter-cpplint.svg?branch=master)](https://travis-ci.org/SublimeLinter/SublimeLinter-cpplint)
 
-This linter plugin for SublimeLinter provides an interface to [cpplint](https://pypi.python.org/pypi/cpplint). It will be used with files that have the “C++” syntax.
+This linter plugin for SublimeLinter provides an interface to [cpplint](https://pypi.python.org/pypi/cpplint). It will be used with files that have the "C" or “C++” syntax.
 
 ## Installation
-SublimeLinter must be installed in order to use this plugin. 
+SublimeLinter must be installed in order to use this plugin.
 
 Please use [Package Control](https://packagecontrol.io) to install the linter plugin.
 
