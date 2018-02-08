@@ -1,0 +1,3 @@
+SublimeLinter-cpplint
+-------------------------------
+Will now also lint files with the C syntax.
