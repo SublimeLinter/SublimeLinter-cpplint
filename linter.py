@@ -16,7 +16,7 @@ from SublimeLinter.lint import Linter, util
 class Cpplint(Linter):
     """Provides an interface to cpplint."""
 
-    syntax = 'c++'
+    syntax = ('c++', 'c')
     cmd = ('cpplint', '*', '@')
     regex = r'^.+:(?P<line>\d+):\s+(?P<message>.+)'
     tempfile_suffix = '-'
