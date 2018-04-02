@@ -1,33 +1,16 @@
-#
-# linter.py
-# Linter for SublimeLinter3, a code checking framework for Sublime Text 3
-#
-# Written by NotSqrt
-# Copyright (c) 2013 NotSqrt
-#
-# License: MIT
-#
-
-"""This module exports the Cpplint plugin class."""
-
 from SublimeLinter.lint import Linter, util
 
 
 class Cpplint(Linter):
-    """Provides an interface to cpplint."""
-
-    syntax = ('c++', 'c')
-    cmd = ('cpplint', '*', '@')
+    cmd = ('cpplint', '${args}', '${file}')
     regex = r'^.+:(?P<line>\d+):\s+(?P<message>.+)'
     tempfile_suffix = '-'
     error_stream = util.STREAM_BOTH  # errors are on stderr
     defaults = {
+        'selector': 'source.c, source.c++',
         '--filter=,': '',
         '--linelength=,': '',
     }
-    comment_re = r'\s*/[/*]'
-    inline_settings = None
-    inline_overrides = ['filter', 'linelength']
 
     def split_match(self, match):
         """
