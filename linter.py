@@ -6,6 +6,7 @@ class Cpplint(Linter):
     regex = r'^.+:(?P<line>\d+):\s+(?P<message>.+)'
     tempfile_suffix = '-'
     error_stream = util.STREAM_BOTH  # errors are on stderr
+    on_stderr = None  # handle stderr via split_match
     defaults = {
         'selector': 'source.c, source.c++',
         '--filter=,': '',
